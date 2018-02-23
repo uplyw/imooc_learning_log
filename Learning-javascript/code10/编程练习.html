@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编程练习</title>
+</head>
+<body>
+<h2>操作成功</h2>
+<p><span id="s"></span>后跳转到<a href="http://www.uplyw.com">uplyw</a></p>
+<script>
+//    var tz = setTimeout(function(){
+//        window.open("http://www.uplyw.com","_self");
+//    },5000)
+//
+//    var djs = setTimeout(function(){
+//        var num = 5;
+//        document.getElementById('s').innerHTML = num;
+//        num = num - 1;
+//    },1000)
+    var num = 5;
+    function forwardpage(){
+        document.getElementById("s").innerHTML = num;
+        num = num - 1;
+        setTimeout(forwardpage,1000);
+        if(num == 0){
+            clearTimeout(forwardpage());
+            window.open("http://www.uplyw.com","_self");
+        }
+    }
+</script>
+</body>
+</html>

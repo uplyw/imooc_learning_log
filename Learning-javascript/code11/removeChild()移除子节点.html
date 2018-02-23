@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移除子节点removeChild()</title>
+</head>
+<body>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+</ul>
+<script>
+    var oul = document.getElementsByTagName("ul")[0];
+    var oli = oul.removeChild(oul.childNodes[1]);
+    document.write(oli.innerHTML);
+</script>
+</body>
+</html>

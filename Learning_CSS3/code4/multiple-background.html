@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiple background</title>
+    <style>
+        div{
+            width: 300px;
+            height: 140px;
+            float: left;
+            margin-left: 20px;
+            border: 1px solid saddlebrown ;
+
+        }
+        .mulitiple1{
+            background: url("cat.jpg") no-repeat left top,
+                        url("cat.jpg") no-repeat right top;
+        }
+        .mulitiple2{
+            background: url("cat.jpg") no-repeat left top/30% 50%,
+                        url("cat.jpg") no-repeat right top/60% 70%;
+        }
+    </style>
+</head>
+<body>
+<div class="mulitiple1" ></div>
+<div class="mulitiple2" >左30% 50%<br/>右60% 70%</div>
+</body>
+</html>

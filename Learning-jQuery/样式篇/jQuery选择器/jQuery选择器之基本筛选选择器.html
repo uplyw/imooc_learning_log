@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器之基本筛选选择器</title>
+    <style>
+        li{
+            height: 30px;
+        }
+    </style>
+    <script type="text/javascript" src="../../libs/jquery.min.js"></script>
+</head>
+<body>
+<h2>:first</h2>
+<ul class="ul1">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<h2>:last</h2>
+<ul class="ul2">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<h2>:even</h2>
+<ul class="ul3">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<h2>:odd</h2>
+<ul class="ul4">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    $(".ul1 li:first").css("border","3px solid #fefe34");
+    $(".ul2 li:last").css("border","3px solid #fefe34");
+    $(".ul3 li:even").css("border","3px solid #fefe34");
+    $(".ul4 li:odd").css("border","3px solid #fefe34");
+</script>
+</body>
+</html>

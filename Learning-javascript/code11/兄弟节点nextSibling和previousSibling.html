@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟节点nextSibling和previousSibling</title>
+</head>
+<body>
+<ul>
+    <li>HTML</li><li>css</li><li>javascript</li>
+</ul>
+<script>
+    var oli = document.getElementsByTagName("li")[1];
+    olin = oli.nextSibling;
+    olip = oli.previousSibling;
+    document.write(olip.innerHTML);
+    document.write(olin.innerHTML);
+</script>
+</body>
+</html>

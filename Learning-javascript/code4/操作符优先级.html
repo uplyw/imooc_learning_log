@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作符优先级</title>
+</head>
+<body>
+<h3>操作符之间的优先级（高到低）:<br/><br/>
+
+    <small>算术操作符 → 比较操作符 → 逻辑操作符 → "="赋值符号<br/><br/>
+
+    如果同级的运算是按从左到右次序进行,多层括号由里向外。</small></h3>
+<script>
+    var num1 = 89;
+    var num2 = 98;
+    var ys1 = num1 * num2 - num1 + num2;
+    var ys2 = ((num1 + num2) / (num2 - num1)) - ys1;
+    document.write(ys1 + "<br/>");
+    document.write(ys2 + "<br/>");
+</script>
+</body>
+</html>

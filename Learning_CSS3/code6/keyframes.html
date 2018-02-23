@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关键帧--keyframes</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            background: red;
+            animation: changebg 3s ease-in 1s infinite;
+        }
+        @keyframes changebg {
+            0%{
+                background: #1d95ff;
+            }
+            20%{
+                background: #d96262;
+            }
+            40%{
+                background: #000000;
+            }
+            60%{
+                background: #2f60ff;
+            }
+            80%{
+                background: #66ff66;
+            }
+            100%{
+                background: #02646e;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div></div>
+</body>
+</html>

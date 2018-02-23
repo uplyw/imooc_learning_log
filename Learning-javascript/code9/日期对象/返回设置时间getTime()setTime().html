@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回设置时间</title>
+</head>
+<body>
+<script>
+    var otime = new Date();
+    document.write("当前时间：" + otime + "<br/>");
+    otime.setTime(otime.getTime() + 3*60*60*1000);
+    document.write("三个小时后：" +otime);
+</script>
+</body>
+</html>

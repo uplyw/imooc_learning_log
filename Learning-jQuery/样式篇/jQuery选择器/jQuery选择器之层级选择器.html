@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器之层级选择器</title>
+    <script type="text/javascript" src="../../libs/jquery.min.js"></script>
+</head>
+<body>
+<ul class="ul1">
+    <li>1111</li>
+    <li>2222</li>
+    <li>3333</li>
+    <li>4444</li>
+    <li>5555</li>
+</ul>
+<ul class="ul2">
+    <li>1111</li>
+    <li>2222</li>
+    <li class="li3">3333</li>
+    <li>4444</li>
+    <li>5555</li>
+</ul>
+<script>
+    $(".ul1 li").css({"border":"2px solid #ff64ce"});
+    $(".li3 + li").css({"border":"2px solid #cc4523"})
+</script>
+</body>
+</html>

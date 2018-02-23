@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insertBefore()</title>
+</head>
+<body>
+<ul><li>html</li><li>css</li><li>javascript</li></ul>
+<script>
+    var oul = document.getElementsByTagName("ul")[0];
+    var op = document.createElement("p");
+    op.innerHTML = "php";
+    oul.insertBefore(op,oul.firstChild);
+</script>
+</body>
+</html>

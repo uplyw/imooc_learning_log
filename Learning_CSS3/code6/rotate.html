@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转--rotate</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background: #d96262;
+            transform: rotate(30deg);
+            margin: 100px auto;
+        }
+        div span{
+            display: inline-block;     /* 只对块或内联块元素起作用 所以要先把内联元素转换成块或内联块元素 */
+            color: #fff;
+            font-size: 30px;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+<div><span>旋转</span></div>
+</body>
+</html>

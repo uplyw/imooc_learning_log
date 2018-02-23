@@ -1,0 +1,57 @@
+/*by uplyw*/
+
+@charset "utf-8";
+div{
+    margin: 50px 0 0 50px;
+}
+p{
+    margin-left: 50px;
+}
+.shadow{
+    float: left;
+}
+.shadow1{
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 6px #666;
+}
+.shadow2{
+    width: 100px;
+    height: 100px;
+    box-shadow: -4px -4px 6px #666;
+}
+.shadow3{
+    width: 100px;
+    height: 100px;
+    box-shadow: -4px 4px 6px #666;
+}
+.shadow4{
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 6px #666 inset;
+}
+.shadow5{
+    width: 100px;
+    height: 100px;
+    box-shadow: -4px -4px 6px #666 inset;
+}
+.shadow6{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 6px #000;
+}
+.shadow7{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 6px #000 inset;
+}
+.shadow8{
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 6px #666 , -4px -4px 6px #f66 , 4px 4px 6px 4px #6f6 inset;
+}
+.shadow9{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 4px #000,0 0 0 8px #f66,0 0 0 12px #6f6,0 0 0 16px #666;
+}

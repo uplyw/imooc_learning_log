@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时器setInterval()</title>
+</head>
+<body>
+<!--<script>-->
+    <!--var attime;-->
+    <!--function clock(){-->
+        <!--var time=new Date();-->
+        <!--var timeS = time.getSeconds();-->
+        <!--if(timeS<10){-->
+            <!--timeS = "0"+timeS-->
+        <!--}-->
+        <!--attime= time.getHours()+":"+time.getMinutes()+":"+timeS ;-->
+        <!--document.getElementById("clock").value = attime;-->
+    <!--}-->
+    <!--attime = setInterval(clock,1000)-->
+<!--</script>-->
+<!--<form>-->
+    <!--<label for="clock">时间：</label><input type="text" id="clock" size="50"  />-->
+<!--</form>-->
+<script>
+//    var attime;
+//    function shijian(){
+//        var odate = new Date();
+//        var times = odate.getSeconds();
+//        if (times<10){
+//            times = "0" + times;
+//        }
+//        attime = odate.getHours() + ":" + odate.getMinutes() + ":" + times;
+//        document.getElementById("clock").value = attime;
+//    }
+//    attime = setInterval(shijian,1000);
+    attime = setInterval(function(){
+        var d = new Date();
+        var s = d.getSeconds();
+        if(s<10){
+            s = "0" + s;
+        }
+        document.getElementById("clock").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + s;
+    },1000);
+</script>
+<!--<input type="text" id="clock">-->
+<p id="clock"></p>
+</body>
+</html>

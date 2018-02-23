@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>createTextNode()创建文本节点</title>
+    <style>
+        .cla{
+            width: 300px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 36px;
+            color: aqua;
+            border:1px solid fuchsia;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var ele = document.createElement("div");
+        ele.className = "cla";
+        var txt = document.createTextNode("i love you");
+        ele.appendChild(txt);
+        document.body.appendChild(ele);
+    </script>
+</body>
+</html>

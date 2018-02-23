@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器之内容选择器</title>
+    <script type="text/javascript" src="../../libs/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <p>con</p>
+    <p>coqn</p>
+    <p><span>con</span></p>
+</div>
+<script>
+    $("div p:contains('con')").css("border","2px solid #ee32fe")
+</script>
+</body>
+</html>

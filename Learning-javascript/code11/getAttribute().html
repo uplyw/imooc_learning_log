@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getAttribute()</title>
+</head>
+<body>
+<ul>
+    <li class="li1">html</li>
+    <li>css</li>
+    <li class="li3">javascript</li>
+    <li class="li4"><a href="http://www.uplyw.com">uplyw</a></li>
+</ul>
+<script>
+    var li = document.getElementsByTagName("li");
+    for (var i=0;i<li.length;i++){
+        var liA = li[i].getAttribute("class");
+        if (liA != null){
+            document.write(liA + "<br/>");
+        }
+    }
+</script>
+</body>
+</html>

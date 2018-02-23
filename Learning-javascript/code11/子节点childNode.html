@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子节点childNode()</title>
+</head>
+<body>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+</ul>
+<script>
+    var oli = document.getElementsByTagName("ul")[0].childNodes;
+    for(var i = 0;i<oli.length;i++){
+        document.write(oli[i].nodeType + "<br/>");
+    }
+</script>
+</body>
+</html>

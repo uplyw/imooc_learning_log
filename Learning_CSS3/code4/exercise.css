@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    width: 830px;
+    margin: 40px auto;
+    background: #d96262;
+    border-radius: 10px;
+    box-shadow: 0 6px 0 #a43232;
+    overflow: hidden;
+}
+ul li{
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    background: linear-gradient(to top , rgba(0,0,0,0) ,#777 ,rgba(0,0,0,0)) no-repeat right/2px 30px;
+}
+ul li:last-child{
+    background: none;
+}
+ul li a{
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 3px #f00;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>backgrount-origin</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dashed slateblue;
+            background: url("cat.jpg") no-repeat;
+            margin-bottom: 10px;
+        }
+        .origin1{
+            background-origin: border-box;
+        }
+        .origin2{
+            background-origin: padding-box;
+        }
+        .origin3{
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+<div class="origin1">border-box</div>
+<div class="origin2">padding-box</div>
+<div class="origin3">content-box</div>
+</body>
+</html>

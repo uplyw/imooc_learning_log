@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById(),getElementsByName(),getElementsByTagName()</title>
+</head>
+<body>
+<form action="">
+    选择你喜欢的：<br/><br/>
+    <input type="checkbox" name="like" id="check1"><label for="check1">跑步</label>
+    <input type="checkbox" name="like" id="check2"><label for="check2">音乐</label>
+    <input type="checkbox" name="like" id="check3"><label for="check3">篮球</label>
+    <input type="checkbox" name="like" id="check4"><label for="check4">游泳</label>
+    <input type="checkbox" name="like" id="check5"><label for="check5">登山</label>
+    <input type="checkbox" name="like" id="check6"><label for="check6">读书</label> <br/><br/>
+    <input type="button"  value="全选" id="button" onclick="checkall()" > &nbsp; &nbsp;
+
+    <input type="button" value="反选" id="revbutton" onclick="rev()"> &nbsp; &nbsp;
+    <input type="button" value="全不选" id="unbutton" onclick="clearall()"> <br />
+    <br/>
+    选择你喜欢的：<br/><br/>
+    <input type="text" name="text" id="text" value="" ><input type="button" value="确定" onclick="submit()">
+</form>
+<script>
+    var like = document.getElementsByName("like");
+    function checkall(){
+        for (var i=0; i<like.length;i++){
+           if (!like[i].checked){
+                like[i].checked = true;
+//               break;
+           }
+        }
+    };
+    function clearall(){
+        for (var i=0;i<like.length;i++){
+            if (like[i].checked){
+                like[i].checked = false;
+            }
+        }
+    };
+    function  rev(){
+        for (var i = 0;i<like.length;i++){
+            if (like[i].checked){
+                like[i].checked = false;
+            }else if(!like[i].checked){
+                like[i].checked = true;
+            }
+        }
+    }
+
+    function submit(){
+        var val = document.getElementById("text").value.split(",");
+        for(i=0;i<like.length;i++){
+            for(j=0;j<val.length;j++){
+                if(like[i].value == val[j]){
+                    like[i].checked = true;
+                    break
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

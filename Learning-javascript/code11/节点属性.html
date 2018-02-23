@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点属性 </title>
+</head>
+<body>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+</ul>
+<script>
+    var oli = document.getElementsByTagName("li");
+    for (var i=0;i<oli.length;i++){
+        document.write(oli[i].nodeName + oli[i].nodeType + oli[i].nodeValue + "<br/>")
+    }
+
+</script>
+</body>
+</html>

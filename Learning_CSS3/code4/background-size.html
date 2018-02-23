@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-size</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #1d95ff;
+            background: url("cat.jpg") no-repeat;
+            float: left;
+            margin-left: 5px;
+        }
+        .size1{
+            background-size: auto;
+        }
+        .size2{
+            background-size: contain;
+        }
+        .size3{
+            background-size: cover;
+        }
+        .size4{
+            background-size: 200px 200px;
+        }
+        .size5{
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="size1">auto</div>
+<div class="size2">contain</div>
+<div class="size3">cover</div>
+<div class="size4">200px 200px</div>
+<div class="size5">100% 100%</div>
+</body>
+</html>

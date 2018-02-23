@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            border: 2px solid #2f60ff;
+            margin: 100px auto;
+        }
+        div span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #d96262;
+            animation: move 10s ease-in .5s infinite alternate;     /*名字 持续时间  运动方式  等待时间  循环次数  逆循环*/
+        }
+        @keyframes move {
+            0%{
+                transform: translate(0px,0px);
+            }
+            5%{
+                transform: translate(100px,100px);
+            }
+            10%{
+                transform: translate(200px,0px);
+            }
+            15%{
+                transform: translate(300px,100px);
+            }
+            20%{
+                transform: translate(400px,0px);
+            }
+            25%{
+                transform: translate(500px,100px);
+            }
+            30%{
+                transform: translate(600px,0px);
+            }
+            35%{
+                transform: translate(500px,100px);
+            }
+            40%{
+                transform: translate(600px,200px);
+            }
+            45%{
+                transform: translate(500px,300px);
+            }
+            50%{
+                transform: translate(600px,400px);
+            }
+            55%{
+                transform: translate(500px,500px);
+            }
+            60%{
+                transform: translate(600px,600px);
+            }
+            65%{
+                transform: translate(500px,500px);
+            }
+            70%{
+                transform: translate(500px,600px);
+            }
+            75%{
+                transform: translate(400px,500px);
+            }
+            80%{
+                transform: translate(300px,600px);
+            }
+            85%{
+                 transform: translate(200px,500px);
+             }
+            90%{
+                transform: translate(100px,600px);
+            }
+            95%{
+                transform: translate(200px,500px);
+            }
+            100%{
+                transform: translate(0px,600px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span></span>
+</div>
+</body>
+</html>

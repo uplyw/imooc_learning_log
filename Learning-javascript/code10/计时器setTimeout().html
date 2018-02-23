@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时器setTimeout</title>
+</head>
+<body>
+<script>
+    var num = 0;
+    function attime(){
+        document.getElementById('clock').innerHTML = num;
+        num = num + 1;
+        setTimeout("attime()",1000);
+    }
+
+</script>
+<p id="clock"></p>
+<button onclick="attime()">kaishi</button>
+</body>
+</html>

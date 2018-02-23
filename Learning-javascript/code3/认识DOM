@@ -1,0 +1,13 @@
+文档对象模型DOM（document object model）定义访问和处理HTML文档的标准方法。
+DOM将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。
+
+<html>
+    <body>
+        <p>这是p元素</p>
+        <a href="http://www.uplyw.com">liyanwei</a>
+    </body>
+</html>
+
+1、元素节点：即标签。
+2、文本节点：标签里的内容。
+3、属性节点：标签里的属性。

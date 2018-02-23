@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器之特殊选择器this</title>
+    <script type="text/javascript" src="../../libs/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1">点击测试：通过原生DOM处理</div>
+<div id="div2">点击测试：通过原生jQuery处理</div>
+<script>
+    var d1 = document.getElementById("div1");
+    d1.addEventListener("click",function(){
+        this.style.color = "red";
+    },false)
+</script>
+<script>
+    $("#div2").click(function(){
+        $(this).css("color","blue");
+    })
+</script>
+</body>
+</html>

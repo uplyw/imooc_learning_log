@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编程练习</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var odate = new Date();
+        var oyear = odate.getFullYear();
+        var omon = odate.getMonth();
+        var ot = odate.getDate();
+        var d = ["日","一","二","三","四","五","六"];
+        var oday = d[odate.getDay()];
+        document.write(oyear + "年" + omon + 1 + "月" + ot + "日  " + "星期" + oday );
+        var cj = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+        var cjArr = cj.split(";");
+        for(var i=0;i<cjArr.length;i++){
+            var score = cjArr[i].substring(cjArr[i].indexOf(":")+1,cjArr[i].length);
+            sum=sum+ parseInt(score);
+            document.write(sum)
+        }
+    </script>
+</body>
+</html>

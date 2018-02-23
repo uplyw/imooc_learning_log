@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+</head>
+<body>
+<input type="button" value="打开一个新窗口" onclick="openWindow()">
+<script>
+    function openWindow(){
+        var xw = confirm("你是否要打开一个网站");
+        if(xw){
+            var Ourl = prompt("请输入你要打开的网址","http://www.uplyw.com");
+            window.open(Ourl,"_black")
+        }
+    }
+</script>
+</body>
+</html>

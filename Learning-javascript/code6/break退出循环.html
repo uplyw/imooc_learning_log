@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break退出循环</title>
+</head>
+<body>
+<script>
+    var myArr = new Array(70,80,90,95,50,78);
+    var i=0;
+    while (i<myArr.length){
+        if(myArr[i]<60){
+            document.write("不及格，滚出去！");
+            break;
+        }
+        document.write("你的成绩是："+ myArr[i] + "真牛逼！" +"<br/>");
+        i++
+    }
+</script>
+</body>
+</html>

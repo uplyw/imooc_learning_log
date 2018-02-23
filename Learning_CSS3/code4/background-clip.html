@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>backgrount-clip</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dashed slateblue;
+            background: url("cat.jpg") no-repeat;
+            margin-bottom: 10px;
+            background-origin: border-box;
+        }
+        .clip1{
+            background-clip: border-box;
+        }
+        .clip2{
+            background-clip: padding-box;
+        }
+        .clip3{
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+<div class="clip1">border-box</div>
+<div class="clip2">padding-box</div>
+<div class="clip3">content-box</div>
+</body>
+</html>

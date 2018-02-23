@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除计时器clearInterval()</title>
+</head>
+<body>
+<script>
+    attime = setInterval(function(){
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        document.getElementById("clock").innerHTML =tozero(h)  + ":" + tozero(m) + ":" + tozero(s);
+    },1000);
+    function tozero(obj){
+       return obj = obj < 10 ? '0' + obj : '' + obj;
+    }
+</script>
+<h1 id="clock"></h1>
+<button onclick="clearInterval(attime)">停止</button>
+</body>
+</html>

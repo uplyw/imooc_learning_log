@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>继续循环continue</title>
+</head>
+<body>
+<script>
+    var myArr = new Array(70, 80, 90, 95, 50, 78);
+    for (var i = 0 ; i < myArr.length ; i++) {
+        if (myArr[i] < 60) {
+            document.write("不及格，滚出去！" + "<br/>");
+            continue;
+        }
+        document.write("你的成绩是：" + myArr[i] + "真牛逼！" + "<br/>");
+    }
+</script>
+</body>
+</html>

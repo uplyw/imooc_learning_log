@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除计时器setTimeout()</title>
+</head>
+<body>
+<script>
+    var num = 0;
+    var i;
+    function starttime(){
+        document.getElementById("clock").innerHTML = num;
+        num = num +1;
+        i = setTimeout("starttime()",1000);
+    }
+    function stoptime(){
+        clearTimeout(i);
+    }
+</script>
+<p id="clock"></p>
+<button onclick="starttime()">开始</button>
+<button onclick="stoptime()">结束</button>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML()</title>
+</head>
+<body>
+<P id="op">hello world!</P>
+<script>
+    var Op = document.getElementById("op");
+    document.write("p标签的原始内容为：" + Op.innerHTML + "<br/>")
+    Op.innerHTML = "你好，javascript！";
+    document.write("p标签修改后的内容：" + Op.innerHTML );
+</script>
+</body>
+</html>

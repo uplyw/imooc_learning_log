@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setAttribute()</title>
+</head>
+<body>
+<ul>
+    <li title="html">HTML</li>
+    <li title="">CSS</li>
+    <li title="javascript">JavaScript</li>
+    <li title="">jQuery</li>
+    <li title="vue">Vue</li>
+</ul>
+<script>
+    var li = document.getElementsByTagName("li");
+    for (var i = 0;i < li.length;i++){
+        var liA = li[i].getAttribute("title");
+        if (liA == ""){
+            li[i].setAttribute("title","web前端技术")
+        }else {
+            document.write(liA + "<br/>")
+        }
+    }
+</script>
+</body>
+</html>

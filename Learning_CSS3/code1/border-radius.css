@@ -1,0 +1,57 @@
+/*by uplyw*/
+
+@charset "utf-8";
+div{
+    float: left;
+    margin-left: 50px;
+}
+
+/*正圆*/
+.radius1{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background: darkcyan;
+}
+
+/*上半圆*/
+.radius2{
+    width: 100px;
+    height: 50px;
+    -webkit-border-radius:50px 50px 0 0;
+    -moz-border-radius:50px 50px 0 0;
+    border-radius:50px 50px 0 0;
+    background: darkcyan;
+}
+
+/*右半圆*/
+.radius3{
+    width: 50px;
+    height: 100px;
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 50px 0;
+    background: darkcyan;
+}
+
+/*下半圆*/
+.radius4{
+    width: 100px;
+    height: 50px;
+    -webkit-border-radius:0 0 50px 50px;
+    -moz-border-radius:0 0 50px 50px;
+    border-radius:0 0 50px 50px;
+    background: darkcyan;
+}
+
+/*左半圆*/
+.radius5{
+    width: 50px;
+    height: 100px;
+    -webkit-border-radius:50px 0 0 50px;
+    -moz-border-radius:50px 0 0 50px;
+    border-radius:50px 0 0 50px;
+    background: darkcyan;
+}

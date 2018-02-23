@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页卷去的距离和偏移量</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 300px;
+            border:5px solid #ccc;
+        }
+        .box1{
+            float: left;
+
+        }
+        .box1-1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid seagreen;
+            overflow: auto;
+        }
+        .box1-1 p{
+            width: 500px;
+            height: 600px;
+        }
+        input{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .box2{
+            float: left;
+            height: 300px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 1px double darkturquoise;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1">
+        <div class="box1-1" id="os">
+            <p>这是一个测试网页卷去的距离和偏移量的内容</p>
+            <p>offsetTop，offsetLeft，scrollTop，scrollLeft</p>
+        </div>
+        <input type="button" value="惦记我" onclick="test()">
+    </div>
+    <div class="box2">
+        <p>offsetTop: <span id="ow"></span>px</p>
+        <p>offsetLeft: <span id="oh"></span>px</p>
+        <p>scrollTop: <span id="sw"></span>px</p>
+        <p>scrollLeft: <span id="sh"></span>px</p>
+    </div>
+</div>
+<script>
+    function test(){
+        var os = document.getElementById("os");
+        document.getElementById("ow").innerHTML = (os.offsetTop);
+        document.getElementById("oh").innerHTML = (os.offsetLeft);
+        document.getElementById("sw").innerHTML = (os.scrollTop);
+        document.getElementById("sh").innerHTML = (os.scrollLeft);
+    }
+</script>
+</body>
+</html>

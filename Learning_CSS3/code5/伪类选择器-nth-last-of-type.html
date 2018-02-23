@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器-nth-of-type</title>
+    <style>
+        .wrapper > div:nth-last-of-type(2n+1),
+        .wrapper > p:nth-last-of-type(2n){
+            background: orange;
+        }
+        /*或者*/
+
+        .wrapper > div:nth-last-of-type(odd),
+        .wrapper > p:nth-last-of-type(even){
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div>我是一个Div元素</div>
+    <p>我是一个段落元素</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+</div>
+</body>
+</html>
